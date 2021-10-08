@@ -1,593 +1,215 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Lagoon Design</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="images/logo.png"/>
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/et-lineicons.css">
-    <link rel="stylesheet" href="css/themify-icons.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/flexslider.css">
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-        p {
-            font-size: 17px;
-            line-height: 1.9em;
-        }
-
-        .icon {
-            width: 100px;
-            height: 100px;
-            display: table;
-            margin: 0 auto;
-            margin-bottom: 0px;
-            margin-bottom: 20px;
-        }
-
-        .icon i {
-            display: table-cell;
-            vertical-align: middle;
-            width: 100px;
-            height: 100px;
-            font-size: 50px;
-            color: #b99658;
-            background: #fff;
-            -webkit-border-radius: 50%;
-            -moz-border-radius: 50%;
-            -ms-border-radius: 50%;
-            border-radius: 50%;
-        }
-
-        .timer {
-            font-size: 40px;
-            font-weight: bold;
-        }
-
-        .label-project {
-            font-size: 20px;
-            margin-top: 10px;
-        }
-
-        .gorman-services:hover {
-            box-shadow: 0 44px 98px 0 rgba(0, 0, 0, .05);
-            border-bottom: 2px solid #b99658;
-        }
-
-        .icon-menu {
-            background: white;
-            width: 17px;
-            height: 17px;
-            border-radius: 50%;
-            display: inline-block;
-        }
-
-        .gorman-aside-large {
-            width: 0;
-            display: none;
-        }
-
-        .gorman-aside-small {
-            width: 7%;
-            background: #676161b5
-        }
-
-        .gorman-main-large {
-            width: 100%
-        }
-
-        .gorman-main-small {
-            width: 93%
-        }
-
-        .active .icon-menu {
-            background: #b99658;
-        }
-    </style>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Logoon design</title>
+    <meta content="Logoon design" name="description">
+    <meta content="Logoon design" name="keywords">
+    <link href="images/logo.png" rel="icon">
+    <link href="images/logo.png" rel="apple-touch-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+<!--    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">-->
+<!--    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">-->
+    <link href="assets/css/style.css" rel="stylesheet">
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-<div class="progress-wrap">
-    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
-    </svg>
-</div>
-<!-- Mouse cursor -->
-<div class="mouse-cursor cursor-outer"></div>
-<div class="mouse-cursor cursor-inner"></div>
-<!-- Main -->
-<div class="gorman-page"><a href="#0" class="js-gorman-nav-toggle gorman-nav-toggle"><i></i></a>
-    <!-- Sidebar -->
-    <aside class="gorman-aside gorman-aside-small" id="sidebar">
-        <!-- Logo -->
-        <div class="gorman-logo">
-            <div>
-                <a href="javascript:void(0)" id="menu-toggle">
-                    <i class="ti-align-left" style="font-size: 22px;color: white"></i>
-                </a>
-            </div>
+<body>
+<style>
+    body {
+        font-family: 'Josefin Sans', sans-serif;
+    }
+
+    #header {
+        width: 100px;
+        padding: 0 23px;
+        background: #fff;
+    }
+
+    #footer {
+        width: 100px;
+        background: #fff;
+    }
+
+    .nav-menu a i, .nav-menu a:focus i {
+        font-size: 17px;
+        padding-right: 8px;
+        color: #ccc;
+    }
+
+    .bi.bi-chevron-double-down {
+        font-size: 23px;
+        color: #ccc;
+    }
+
+    #main {
+        margin-left: 100px;
+    }
+
+    @media only screen and (max-width: 1198px) {
+        #main {
+            margin-left: 0;
+        }
+    }
+
+    .bx.bi-circle-fill {
+        font-size: 17px;
+    }
+
+    .nav-menu a, .nav-menu a:focus {
+        padding: 12px 19px;
+    }
+    .shadow {
+        box-shadow: 0 9px 30px rgba(51,83,145,.08) !important;
+    }
+</style>
+<i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+<header id="header" class="shadow">
+    <div class="d-flex flex-column">
+        <div class="profile mt-4">
+            <img src="images/logo.png" style="width: 80px;border: none;margin-left: -13px">
+            <!--            <i class="bi bi-text-paragraph" style="font-size: 28px;color:white;padding: 14px;"></i>-->
         </div>
-        <!-- Menu -->
-        <nav class="gorman-main-menu">
-            <ul style="margin-top: 150px">
-                <li>
-                    <a href="#home" class="navigation active">
-                        <i class="icon-menu"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#about" class="navigation">
-                        <i class="icon-menu"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#history" class="navigation">
-                        <i class="icon-menu"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#services" class="navigation">
-                        <i class="icon-menu"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#photos" class="navigation">
-                        <i class="icon-menu"></i>
-                    </a>
-                </li>
+        <nav id="navbar" class="nav-menu navbar" style="margin-top: 100px">
+            <ul>
+                <li><a href="#home" class="nav-link scrollto active"><i class="bx bi-circle-fill"></i></a></li>
+                <li><a href="#about" class="nav-link scrollto active"><i class="bx bi-circle-fill"></i></a></li>
+                <li><a href="#facts" class="nav-link scrollto"><i class="bx bi-circle-fill"></i></a></li>
+                <li><a href="#skills" class="nav-link scrollto"><i class="bx bi-circle-fill"></i></a></li>
+                <li><a href="#resume" class="nav-link scrollto"><i class="bx bi-circle-fill"></i></a></li>
             </ul>
         </nav>
-        <!-- Sidebar Footer -->
-        <div class="gorman-footer">
-            <a href="#photos">
-                <i class=" ti-angle-double-down" style="font-size: 22px;color: white"></i>
-            </a>
-        </div>
-    </aside>
-    <!-- Main -->
-    <div class="gorman-main gorman-main-small" id="content">
-        <!-- Home Section -->
-        <div id="home">
-            <div class="gorman-hero js-fullheight">
-                <!-- Slider -->
-                <div class="flexslider js-fullheight">
-                    <ul class="slides">
-                        <li style="background-image: url(images/slider/slider3.jpg);">
-                            <div class="overlay"></div>
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-md-6 offset-md-6 js-fullheight slider-text">
-                                        <div class="slider-text-inner">
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li style="background-image: url(images/slider/slider4.jpg);">
-                            <div class="overlay"></div>
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-md-6 offset-md-6 js-fullheight slider-text">
-                                        <div class="slider-text-inner">
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li style="background-image: url(images/slider/slider5.jpg);">
-                            <div class="overlay"></div>
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-md-6 offset-md-6 js-fullheight slider-text">
-                                        <div class="slider-text-inner">
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li style="background-image: url(images/slider/slider2.jpg);">
-                            <div class="overlay"></div>
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-md-6 offset-md-6 js-fullheight slider-text">
-                                        <div class="slider-text-inner">
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li style="background-image: url(images/slider/slider1.jpg);">
-                            <div class="overlay"></div>
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-md-6 offset-md-6 js-fullheight slider-text">
-                                        <div class="slider-text-inner">
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+    </div>
+</header>
+<section id="home" style="padding: 0">
+    <div class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+                <img src="images/slider/slider5.jpg" class="d-block w-100">
             </div>
-        </div>
-        <!-- About Section -->
-        <div id="about" class="section-padding clear">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-5">
-                        <div class="animate-box" data-animate-effect="fadeInDown">
-                            <img src="images/gif1.gif" style="margin-left: -30px">
-                        </div>
-                        <p class="animate-box" data-animate-effect="fadeInLeft"
-                           style="margin-top: -75px;font-size: 20px">
-                            Our mission is to go beyond the expectation of <br> our CLIENTS.and deliver the most <br>
-                            LUXURY & COZY designs...
-                        </p>
-                    </div>
-                    <div class="col-md-6 offset-md-1">
-                        <div class="about-img animate-box" data-animate-effect="fadeInRight">
-                            <div class="owl-carousel owl-theme" id="about-carousel">
-                                <div class="item">
-                                    <div class="img"><img src="images/about/about1.jpg" alt=""></div>
-                                </div>
-                                <div class="item">
-                                    <div class="img"><img src="images/about/about1.jpg" alt=""></div>
-                                </div>
-                                <div class="item">
-                                    <div class="img"><img src="images/about/about1.jpg" alt=""></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="images/slider/slider4.jpg" class="d-block w-100">
             </div>
-        </div>
-        <!-- Our history Section -->
-        <div id="history" class="section-padding clear">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="animate-box" data-animate-effect="fadeInDown">
-                            <img src="images/gif1.gif" style="margin-left: -30px">
-                        </div>
-                        <p class="animate-box" data-animate-effect="fadeInLeft"
-                           style="margin-top: -70px;font-size: 20px">
-                            Originate from our long history in the GUCC, Our history <br> include many complex projects,
-                            on many designing fields :
-                        </p>
-                        <p style="color: #b99658;font-size: 20px" class="animate-box" data-animate-effect="fadeInLeft">
-                            INTERIOR DESIGNING,STYLING AND DECORATING
-                        </p>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="about-img animate-box" data-animate-effect="fadeInUp">
-                            <img src="images/history.png" alt="" style="width: 105%">
-                        </div>
-                    </div>
-                </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="images/slider/slider3.jpg" class="d-block w-100">
             </div>
-        </div>
-
-        <div id="services" class="section-padding clear mt-5">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-12">
-                        <p class="animate-box" data-animate-effect="fadeInLeft"
-                           style="margin-top: -70px;font-size: 20px">
-                            IT'S ALL ABOUT SUBTLE,DISCREET, <br>HIDDEN DETAILS.
-                        </p>
-                        <p style="color: #b99658;font-size: 20px" class="animate-box" data-animate-effect="fadeInLeft">
-                            Our taste comes from our lang history and deep <br>
-                            experience in the use of design tools.We use <br>
-                            SKETCH to reach inside and demonstrate our <br> understanding of our clients thoughts and
-                            imagination <br> during meetimgs
-                        </p>
-                        <a class="animate-box" data-animate-effect="fadeInLeft">Read more <i class="ti-arrow-right"></i></a>
-                    </div>
-                    <div class="col-md-10">
-                        <div class="about-img animate-box mt-3" data-animate-effect="fadeInUp">
-                            <img src="images/slider/slider3.jpg" alt="" style="width: 105%">
-                        </div>
-                    </div>
-                </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="images/slider/slider3.jpg" class="d-block w-100">
             </div>
-        </div>
-
-        <div id="photos" class="section-padding clear mt-5">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-7">
-                        <p class="animate-box" data-animate-effect="fadeInLeft"
-                           style="margin-top: 50px;font-size: 25px">
-                            ABOUT
-                        </p>
-                        <p style="color: #b99658;font-size: 20px" class="animate-box" data-animate-effect="fadeInLeft">
-                            Design and execute with simplicity and refinement <br>
-                            combining the best materiels with our vision and own <br>
-                            style,Today,We are proud to declare our presence in the GUCC as a leading studio always
-                            committed to <br>
-                            major international standard in the worldide industry.
-                        </p>
-                        <a class="animate-box mt-3" data-animate-effect="fadeInLeft">Read more <i
-                                class="ti-arrow-right"></i></a>
-                    </div>
-                    <div class="col-md-5">
-                        <div class="animate-box" data-animate-effect="fadeInUp">
-                            <video width="400" controls>
-                                <source src="vedios/vedio.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Call Action Section -->
-        <!-- Contact Section -->
-        <!--        <div id="services" class="section-padding bg-gray">-->
-        <!--            <div class="container-fluid">-->
-        <!--                <div class="row">-->
-        <!--                    <div class="animate-box" data-animate-effect="fadeInLeft">-->
-        <!--                        <h2 class="heading-title">Our services</h2>-->
-        <!--                        <hr class="line line-hr-primary">-->
-        <!--                    </div>-->
-        <!--                </div>-->
-        <!--                <div class="row">-->
-        <!--                    <div class="col-md-4">-->
-        <!--                        <div class="gorman-services animate-box" data-animate-effect="fadeInUp">-->
-        <!--                            <div class="gorman-icon"><span class="et-laptop"></span></div>-->
-        <!--                            <div class="gorman-text">-->
-        <!--                                <h3>Architecture</h3>-->
-        <!--                                <p>-->
-        <!--                                    Our architectural service includes plot research, design, license approvals and-->
-        <!--                                    preparation of construction documents.-->
-        <!--                                </p>-->
-        <!--                            </div>-->
-        <!--                        </div>-->
-        <!--                        <div class="gorman-services animate-box" data-animate-effect="fadeInUp">-->
-        <!--                            <div class="gorman-icon"><span class="et-presentation"></span></div>-->
-        <!--                            <div class="gorman-text">-->
-        <!--                                <h3>Fitout and Supervision</h3>-->
-        <!--                                <p>-->
-        <!--                                    Our fit-out team works on adding value to every project, highlighting potential-->
-        <!--                                    issues to avoid delays and cost overruns. We also supervise all interior works,-->
-        <!--                                    including quality control as well as manage and review designs inline with technical-->
-        <!--                                    standards and construction procedures.-->
-        <!--                                </p>-->
-        <!--                            </div>-->
-        <!--                        </div>-->
-        <!--                    </div>-->
-        <!--                    <div class="col-md-4">-->
-        <!--                        <div class="gorman-services animate-box" data-animate-effect="fadeInUp">-->
-        <!--                            <div class="gorman-icon"><span class="et-laptop"></span></div>-->
-        <!--                            <div class="gorman-text">-->
-        <!--                                <h3>Design Consultation </h3>-->
-        <!--                                <p>-->
-        <!--                                    Design consultation is the most important step of the design process, providing you-->
-        <!--                                    with more ideas, guidance, resources, expertise and unique solutions. Our team will-->
-        <!--                                    help you get exactly what you want for your home in terms of colors, style and more.-->
-        <!--                                </p>-->
-        <!--                            </div>-->
-        <!--                        </div>-->
-        <!--                        <div class="gorman-services animate-box" data-animate-effect="fadeInUp">-->
-        <!--                            <div class="gorman-icon"><span class="et-presentation"></span></div>-->
-        <!--                            <div class="gorman-text">-->
-        <!--                                <h3>Furniture, Lighting and Decor</h3>-->
-        <!--                                <p>-->
-        <!--                                    We provide high end luxury furniture, lighting and decor that perfectly complement-->
-        <!--                                    each other, and offer a range of packages to suit many requirements and budgets-->
-        <!--                                </p>-->
-        <!--                            </div>-->
-        <!--                        </div>-->
-        <!--                    </div>-->
-
-        <!--                    <div class="col-md-4">-->
-        <!--                        <div class="gorman-services animate-box" data-animate-effect="fadeInUp">-->
-        <!--                            <div class="gorman-icon"><span class="et-laptop"></span></div>-->
-        <!--                            <div class="gorman-text">-->
-        <!--                                <h3>3D Interior Design</h3>-->
-        <!--                                <p>-->
-        <!--                                    We give life to our design using the latest 2D & 3D imaging technology to showcase-->
-        <!--                                    even the minutest details with complete consistency and quality-->
-        <!--                                </p>-->
-        <!--                            </div>-->
-        <!--                        </div>-->
-        <!--                        <div class="gorman-services animate-box" data-animate-effect="fadeInUp">-->
-        <!--                            <div class="gorman-icon"><span class="et-presentation"></span></div>-->
-        <!--                            <div class="gorman-text">-->
-        <!--                                <h3>Space Planning</h3>-->
-        <!--                                <p>-->
-        <!--                                    Space planning is the core of our interior design that mainly helps you allocate and-->
-        <!--                                    utilize all available space in an efficient and effective manner-->
-        <!--                                </p>-->
-        <!--                            </div>-->
-        <!--                        </div>-->
-        <!--                    </div>-->
-        <!--                </div>-->
-        <!--            </div>-->
-        <!--        </div>-->
-        <!--        <div id="photos" class="section-padding">-->
-        <!--            <div class="container-fluid">-->
-        <!--                <div class="row">-->
-        <!--                    <div class="animate-box" data-animate-effect="fadeInLeft">-->
-        <!--                        <h2 class="heading-title">Photos</h2>-->
-        <!--                        <hr class="line line-hr-primary">-->
-        <!--                    </div>-->
-        <!--                </div>-->
-        <!--                <div class="row">-->
-        <!--                    <ul class="col list-unstyled list-inline mb-0 portfolio-menu" id="menu-filter">-->
-        <!--                        <li class="list-inline-item"><a class="active" data-filter="*">All</a></li>-->
-        <!--                        <li class="list-inline-item"><a class="" data-filter=".2d">2D Designs</a></li>-->
-        <!--                        <li class="list-inline-item"><a class="" data-filter=".exterior">Exterior</a></li>-->
-        <!--                        <li class="list-inline-item"><a class="" data-filter=".interior">Interior</a></li>-->
-        <!--                        <li class="list-inline-item"><a class="" data-filter=".spa">SPA</a></li>-->
-        <!--                        <li class="list-inline-item"><a class="" data-filter=".the_beginning">The Beginning</a></li>-->
-        <!--                    </ul>-->
-        <!--                </div>-->
-        <!--            </div>-->
-        <!--            <div class="container-fluid">-->
-        <!--                <div class="row portfolio-filter mt-3" style="position: relative; height: 772.733px;">-->
-        <!--                    <div class="col-md-4 portfolio-item 2d" style="position: absolute; left: 0px; top: 0px;">-->
-        <!--                        <a href="images/photos/01.jpg" class="img-zoom">-->
-        <!--                            <div class="portfolio-box">-->
-        <!--                                <div class="portfolio-img"><img src="images/photos/01.jpg"-->
-        <!--                                                                class="img-fluid mx-auto d-block" alt=""></div>-->
-        <!--                            </div>-->
-        <!--                        </a>-->
-        <!--                    </div>-->
-        <!--                    <div class="col-md-4 portfolio-item exterior" style="position: absolute; left: 370px; top: 0px;">-->
-        <!--                        <a href="project-page.html">-->
-        <!--                            <div class="portfolio-box">-->
-        <!--                                <div class="portfolio-img"><img src="images/photos/02.jpg"-->
-        <!--                                                                class="img-fluid mx-auto d-block" alt=""></div>-->
-        <!--                            </div>-->
-        <!--                        </a>-->
-        <!--                    </div>-->
-        <!--                    <div class="col-md-4 portfolio-item exterior" style="position: absolute; left: 740px; top: 0px;">-->
-        <!--                        <a href="images/photos/03.jpg" class="img-zoom">-->
-        <!--                            <div class="portfolio-box">-->
-        <!--                                <div class="portfolio-img"><img src="images/photos/03.jpg"-->
-        <!--                                                                class="img-fluid photos d-block" alt=""></div>-->
-        <!--                            </div>-->
-        <!--                        </a>-->
-        <!--                    </div>-->
-        <!--                    <div class="col-md-4 portfolio-item interior" style="position: absolute; left: 370px; top: 256px;">-->
-        <!--                        <a href="project-page.html">-->
-        <!--                            <div class="portfolio-box">-->
-        <!--                                <div class="portfolio-img"><img src="images/photos/04.jpg"-->
-        <!--                                                                class="img-fluid mx-auto d-block" alt=""></div>-->
-        <!--                            </div>-->
-        <!--                        </a>-->
-        <!--                    </div>-->
-        <!--                    <div class="col-md-4 portfolio-item interior" style="position: absolute; left: 740px; top: 256px;">-->
-        <!--                        <a href="images/photos/05.jpg" class="img-zoom">-->
-        <!--                            <div class="portfolio-box">-->
-        <!--                                <div class="portfolio-img"><img src="images/photos/05.jpg"-->
-        <!--                                                                class="img-fluid mx-auto d-block" alt=""></div>-->
-        <!--                            </div>-->
-        <!--                        </a>-->
-        <!--                    </div>-->
-        <!--                    <div class="col-md-4 portfolio-item spa" style="position: absolute; left: 370px; top: 513px;">-->
-        <!--                        <a href="images/photos/06.jpg" class="img-zoom">-->
-        <!--                            <div class="portfolio-box">-->
-        <!--                                <div class="portfolio-img"><img src="images/photos/06.jpg"-->
-        <!--                                                                class="img-fluid mx-auto d-block" alt=""></div>-->
-        <!--                            </div>-->
-        <!--                        </a>-->
-        <!--                    </div>-->
-        <!--                    <div class="col-md-4 portfolio-item the_beginning"-->
-        <!--                         style="position: absolute; left: 0px; top: 515px;">-->
-        <!--                        <a href="images/photos/07.jpg" class="img-zoom">-->
-        <!--                            <div class="portfolio-box">-->
-        <!--                                <div class="portfolio-img"><img src="images/photos/06.jpg"-->
-        <!--                                                                class="img-fluid mx-auto d-block" alt=""></div>-->
-        <!--                            </div>-->
-        <!--                        </a>-->
-        <!--                    </div>-->
-        <!--                    <div class="col-md-4 portfolio-item the_beginning"-->
-        <!--                         style="position: absolute; left: 0px; top: 515px;">-->
-        <!--                        <a href="images/photos/04.jpg" class="img-zoom">-->
-        <!--                            <div class="portfolio-box">-->
-        <!--                                <div class="portfolio-img"><img src="images/photos/06.jpg"-->
-        <!--                                                                class="img-fluid mx-auto d-block" alt=""></div>-->
-        <!--                            </div>-->
-        <!--                        </a>-->
-        <!--                    </div>-->
-        <!--                    <div class="col-md-4 portfolio-item the_beginning"-->
-        <!--                         style="position: absolute; left: 0px; top: 515px;">-->
-        <!--                        <a href="images/photos/02.jpg" class="img-zoom">-->
-        <!--                            <div class="portfolio-box">-->
-        <!--                                <div class="portfolio-img"><img src="images/photos/06.jpg"-->
-        <!--                                                                class="img-fluid mx-auto d-block" alt=""></div>-->
-        <!--                            </div>-->
-        <!--                        </a>-->
-        <!--                    </div>-->
-        <!--                </div>-->
-        <!--            </div>-->
-        <!--        </div>-->
-        <!--        <div id="contact" class="section-padding">-->
-        <!--            <div class="container-fluid">-->
-        <!--                <div class="row">-->
-        <!--                    <div class="col-md-12">-->
-        <!--                        <div class="animate-box" data-animate-effect="fadeInUp">-->
-        <!--                            <h2 class="heading-title">Contact us</h2>-->
-        <!--                            <hr class="line line-hr-primary">-->
-        <!--                        </div>-->
-        <!--                    </div>-->
-        <!--                </div>-->
-        <!--                <div class="row">-->
-        <!--                    &lt;!&ndash; Contact Info &ndash;&gt;-->
-        <!--                    <div class="col-md-3 mb-4 animate-box" data-animate-effect="fadeInLeft">-->
-        <!--                        <p><b>ADDRESS</b></p>-->
-        <!--                        <P>Doha,Qatar - P.O.BOX 8515</P>-->
-        <!--                    </div>-->
-        <!--                    &lt;!&ndash; Contact Form &ndash;&gt;-->
-        <!--                    <div class="col-md-3 animate-box" data-animate-effect="fadeInRight">-->
-        <!--                        <p><b>GET IN TOUCH WITH US</b></p>-->
-        <!--                        <p><b>Give a Call:</b> +974 661 308 01</p>-->
-        <!--                    </div>-->
-        <!--                    <div class="col-md-3 animate-box" data-animate-effect="fadeInRight">-->
-        <!--                        <p><b>GET IN TOUCH WITH US</b></p>-->
-        <!--                        <p><b>Give a Call:</b> +974 551 017 56</p>-->
-        <!--                    </div>-->
-        <!--                    <div class="col-md-3 animate-box" data-animate-effect="fadeInRight">-->
-        <!--                        <p><b>GET IN TOUCH WITH US</b></p>-->
-        <!--                        <p><b>Email:</b> info@lagoondesign.qa</p>-->
-        <!--                    </div>-->
-        <!--                </div>-->
-        <!--            </div>-->
-        <!--        </div>-->
-        <!-- Footer -->
-        <div class="footer2">
-            <div class="container-fluid">
-                <div class="sub-footer">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <p>&copy; 2021 lagoondesign. All Rights Reserved.</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="images/slider/slider1.jpg" class="d-block w-100">
             </div>
         </div>
     </div>
-</div>
-<!-- JavaScript -->
-<script src="js/jquery.min.js"></script>
-<script src="js/modernizr-2.6.2.min.js"></script>
-<script src="js/jquery.easing.1.3.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.waypoints.min.js"></script>
-<script src="js/jquery.flexslider-min.js"></script>
-<script src="js/sticky-kit.min.js"></script>
-<script src="js/isotope.js"></script>
-<script src="js/jquery.magnific-popup.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/custom.js"></script>
-<script>
-    $("#menu-toggle").click(function () {
-        $('#sidebar').removeClass('gorman-aside-small');
-        $('#sidebar').addClass('gorman-aside-large');
-        $('#content').removeClass(' gorman-main-small');
-        $('#content').addClass(' gorman-main-large');
-    });
+</section>
+<main id="main">
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 pt-4 pt-lg-0 content" data-aos="fade-left">
+                    <img src="images/gif1.gif" width="400">
+                    <p style="margin-top: -50px">
+                        Our mission is to go beyond the expectation of LUXURY <br> & COZY designs... <br>
+                        our CLIENTS.and deliver the most
+                    </p>
+                </div>
+                <div class="col-lg-5" data-aos="fade-right">
+                    <div class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="5000">
+                                <img src="images/about/about1.jpg" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="images/about/about2.jpg" class="d-block w-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    $(".navigation").on("click", function (e) {
-        $("a").removeClass("active");
-        $(this).addClass("active");
-    });
-    $("#about").scroll(function () {
-        console.log('oks')
-    });
-</script>
+    <section id="facts" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left">
+                    <img src="images/gif1.gif" width="400">
+                    <p style="margin-top: -50px">
+                        Originate from our long history in the GUCC, Our history <br>
+                        include many complex projects, on many designing fields :
+                    </p>
+                    <p style="color:#b99658">INTERIOR DESIGNING,STYLING AND DECORATING </p>
+                </div>
+                <div class="col-lg-6 mt-5" data-aos="fade-right">
+                    <img src="images/history.png" class="img-fluid" alt="" width="100%">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 pt-lg-0 content" data-aos="fade-left">
+                    <p>IT'S ALL ABOUT SUBTLE,DISCREET,
+                        HIDDEN DETAILS. </p>
+                    <p style="color:#b99658">
+                        Our taste comes from our lang history and deep <br>
+                        experience in the use of design tools.We use <br>
+                        SKETCH to reach inside and demonstrate our <br>
+                        understanding of our clients thoughts and imagination <br>
+                        during meetimg
+                    </p>
+                    <a href="#" class="text-dark">Read more <i class="bi bi-arrow-right"></i> </a>
+                </div>
+                <div class="col-lg-10 mt-3" data-aos="fade-right">
+                    <img src="images/slider/slider3.jpg" class="img-fluid" alt="" width="100%">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume" class="resume">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <h3 class="resume-title">ABOUT</h3>
+                    <p style="color:#b99658">
+                        Design and execute with simplicity and refinement<br>
+                        combining the best materiels with our vision and own <br>
+                        style,Today,We are proud to declare our presence in the GUCC as a leading <br> studio always
+                        committed to <br>
+                        major international standard in the worldide industry.
+                    </p>
+                    <a href="#" class="text-dark">Read more <i class="bi bi-arrow-right"></i> </a>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <video width="400" controls>
+                        <source src="vedios/vedio.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer id="footer">
+    <div class="container" style=" padding: 0 23px">
+        <a href="#resume"><i class="bi bi-chevron-double-down"></i></a>
+    </div>
+</footer>
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!--<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>-->
+<!--<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>-->
+<!--<script src="assets/vendor/purecounter/purecounter.js"></script>-->
+<!--<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>-->
+<!--<script src="assets/vendor/typed.js/typed.min.js"></script>-->
+<!--<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>-->
+<script src="assets/js/main.js"></script>
 </body>
 </html>
