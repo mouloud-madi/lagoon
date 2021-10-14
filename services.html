@@ -8,19 +8,21 @@
     <meta content="Logoon design" name="keywords">
     <link href="images/logo.png" rel="icon">
     <link href="images/logo.png" rel="apple-touch-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&display=swap" rel="stylesheet">
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <!--    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">-->
-    <!--    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">-->
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body>
 <style>
     body {
         font-family: 'Josefin Sans', sans-serif;
+        font-size: 17px;
+        line-height: 40px;
     }
 
     #header {
@@ -86,9 +88,45 @@
     }
 
     .icon-service {
-        color: #b99658;
-        font-size: 50px;
-        margin: 30px;
+        color: #fff;
+        font-size: 25px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box-icon {
+        margin: 0 auto;
+        margin-top: 30px;
+        width: 100%;
+        height: 80px;
+        max-width: 80px;
+        background: linear-gradient(90deg, #bc9e6fa6 0%, #b89d6d 40%, rgba(0, 0, 0, 0.28) 60%);
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        transition: all 0.8s ease;
+        background-position: 0px;
+        background-size: 200px;
+    }
+
+    .card {
+        border: 1px solid rgba(67, 62, 62, 0.06);
+    }
+
+    .section-title h2::after {
+        content: "";
+        background: transparent;
+    }
+
+    .section-title h2 {
+        color: #2d2b2b;
+        text-align: center;
+    }
+
+    .card-text {
+        color: #4f5050;
     }
 </style>
 <!--<div class="loader"></div>-->
@@ -110,107 +148,251 @@
                         <a class="nav-link" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="services.html">Our services</a>
+                        <a class="nav-link active" href="#services">Our services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="photos">Photos</a>
+                        <a class="nav-link" href="#photos">Photos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact us</a>
+                        <a class="nav-link" href="#contact">Contact us</a>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
 </nav>
-<div class="container mt-5">
-    <div class="row justify-content-center">
-        <div class="col-6">
-            <img src="images/12_1.gif"  style="margin-top: -50px" width="100%">
+<section id="services">
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-6">
+                <img id="gif" src="images/12_1.gif" style="margin-top: -100px;margin-bottom: 40px" width="100%">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card text-center h-100" data-aos="fade-up">
+                    <div class="box-icon">
+                        <i class="bi  bi-box-seam icon-service"></i>
+                    </div>
+                    <div class="card-body">
+                        <p style="font-size: 25px">Architecture</p>
+                        <p class="card-text">Our architectural service includes plot research, design, license approvals
+                            and
+                            preparation of construction documents.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card text-center h-100" data-aos="fade-up">
+                    <div class="box-icon">
+                        <i class="bi bi-clipboard icon-service"></i>
+                    </div>
+                    <div class="card-body">
+                        <p style="font-size: 25px">Fitout and Supervision</p>
+                        <p class="card-text">Our fit-out team works on adding value to every project,
+                            highlighting potential issues to avoid delays and cost overruns. We also supervise all
+                            interior
+                            works, including quality control as well as
+                            manage and review designs inline with technical standards and construction procedures .
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card text-center h-100" data-aos="fade-up">
+                    <div class="box-icon">
+                        <i class="bi bi-collection icon-service"></i>
+                    </div>
+                    <div class="card-body">
+                        <p style="font-size: 25px">Design Consultation </p>
+                        <p class="card-text">Design consultation is the most important step of the design process,
+                            providing you with more ideas, guidance, resources, expertise and unique solutions. Our team
+                            will help
+                            you get exactly what you want for your home in terms of colors, style and more.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card text-center h-100" data-aos="fade-up">
+                    <div class="box-icon">
+                        <i class="bi bi-lamp icon-service"></i>
+                    </div>
+                    <div class="card-body">
+                        <p style="font-size: 25px">Furniture, Lighting and Decor </p>
+                        <p class="card-text">
+                            We provide high end luxury furniture, lighting and decor that perfectly complement each
+                            other,
+                            and offer a range of packages to suit many requirements and budgets.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card text-center h-100" data-aos="fade-up">
+                    <div class="box-icon">
+                        <i class="bi bi-layout-wtf icon-service"></i>
+                    </div>
+                    <div class="card-body">
+                        <p style="font-size: 25px">3D Interior Design</p>
+                        <p class="card-text">
+                            We give life to our design using the latest 2D & 3D imaging technology to showcase even
+                            the minutest details with complete consistency and quality.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card text-center h-100" data-aos="fade-up">
+                    <div class="box-icon">
+                        <i class="bi bi-shop-window icon-service"></i>
+                    </div>
+                    <div class="card-body">
+                        <p style="font-size: 25px">Space Planning</p>
+                        <p class="card-text">
+                            Space planning is the core of our interior design that mainly helps you allocate and utilize
+                            all available space in an efficient and effective manner.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-4 mb-4">
-            <div class="card shadow-sm text-center h-100" style="background: white;border: none" data-aos="fade-up">
-                <i class="bi bi-bank2 icon-service"></i>
-                <div class="card-body">
-                    <p style="font-size: 25px">Architecture</p>
-                    <p class="card-text">Our architectural service includes plot research, design, license approvals and preparation of construction documents.
-                    </p>
-                </div>
+</section>
+<section id="photos" class="portfolio section-bg">
+    <div class="container">
+        <div class="section-title">
+            <h2>Photos</h2>
+        </div>
+        <div class="row aos-init aos-animate" data-aos="fade-up">
+            <div class="col-lg-12 d-flex justify-content-center">
+                <ul id="portfolio-flters">
+                    <li data-filter="*" class="filter-active">All</li>
+                    <li data-filter=".filter-app">2D designs</li>
+                    <li data-filter=".filter-card">Exterior</li>
+                    <li data-filter=".filter-web">Interior</li>
+                    <li data-filter=".filter-app">SPA</li>
+                    <li data-filter=".filter-card">The beginning</li>
+                </ul>
             </div>
         </div>
-        <div class="col-md-4 mb-4">
-            <div class="card shadow-sm text-center h-100" style="background: white;border: none" data-aos="fade-up">
-                <i class="bi bi-bank2 icon-service"></i>
-                <div class="card-body">
-                    <p style="font-size: 25px">Fitout and Supervision</p>
-                    <p class="card-text">Our fit-out team works on adding value to every project,
-                        highlighting potential issues to avoid delays and cost overruns. We also supervise all interior works, including quality control as well as
-                        manage and review designs inline with technical standards and construction procedures .
-                    </p>
-                </div>
+        <div class="row portfolio-container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100"
+             style="position: relative; height: 950.4px;">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app" style="position: absolute; left: 0px; top: 0px;">
+                <a href="images/photos/01.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                    <div class="portfolio-wrap">
+                        <img src="images/photos/01.jpg" class="img-fluid" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web"
+                 style="position: absolute; left: 406.4px; top: 0px;">
+                <a href="images/photos/02.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                    <div class="portfolio-wrap">
+                        <img src="images/photos/02.jpg" class="img-fluid" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app"
+                 style="position: absolute; left: 812.8px; top: 0px;">
+                <a href="images/photos/03.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                    <div class="portfolio-wrap">
+                        <img src="images/photos/03.jpg" class="img-fluid" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card"
+                 style="position: absolute; left: 0px; top: 316.8px;">
+                <a href="images/photos/04.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                    <div class="portfolio-wrap">
+                        <img src="images/photos/04.jpg" class="img-fluid" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web"
+                 style="position: absolute; left: 406.4px; top: 316.8px;">
+                <a href="images/photos/05.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                    <div class="portfolio-wrap">
+                        <img src="images/photos/05.jpg" class="img-fluid" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app"
+                 style="position: absolute; left: 812.8px; top: 316.8px;">
+                <a href="images/photos/06.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                    <div class="portfolio-wrap">
+                        <img src="images/photos/06.jpg" class="img-fluid" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card"
+                 style="position: absolute; left: 0px; top: 633.6px;">
+                <a href="images/photos/07.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                    <div class="portfolio-wrap">
+                        <img src="images/photos/07.jpg" class="img-fluid" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card"
+                 style="position: absolute; left: 406.4px; top: 633.6px;">
+                <a href="images/photos/02.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                    <div class="portfolio-wrap">
+                        <img src="images/photos/02.jpg" class="img-fluid" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web"
+                 style="position: absolute; left: 812.8px; top: 633.6px;">
+                <a href="images/photos/03.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                    <div class="portfolio-wrap">
+                        <img src="images/photos/03.jpg" class="img-fluid" alt="">
+                    </div>
+                </a>
             </div>
         </div>
-        <div class="col-md-4 mb-4">
-            <div class="card shadow-sm text-center h-100" style="background: white;border: none" data-aos="fade-up">
-                <i class="bi bi-bank2 icon-service"></i>
-                <div class="card-body">
-                    <p style="font-size: 25px">Design Consultation </p>
-                    <p class="card-text">Design consultation is the most important step of the design process,
-                        providing you with more ideas, guidance, resources, expertise and unique solutions. Our team will help
-                        you get exactly what you want for your home in terms of colors, style and more.
-                    </p>
+    </div>
+</section>
+<section id="facts" class="facts">
+    <div class="container">
+        <div class="row no-gutters">
+            <div class="col-lg-4 col-md-6 d-md-flex align-content-center" data-aos="fade-up" data-aos-delay="100">
+                <div class="count-box">
+                    <i class="bi bi-journal-richtext"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="200" data-purecounter-duration="1"
+                          class="purecounter"></span>
+                    <p><strong>Completed Projects</strong></p>
                 </div>
             </div>
-        </div>
-        <div class="col-md-4 mb-4">
-            <div class="card shadow-sm text-center h-100" style="background: white;border: none" data-aos="fade-up">
-                <i class="bi bi-bank2 icon-service"></i>
-                <div class="card-body">
-                    <p style="font-size: 25px">Furniture, Lighting and Decor </p>
-                    <p class="card-text">
-                        We provide high end luxury furniture, lighting and decor that perfectly complement each other,
-                        and offer a range of packages to suit many requirements and budgets.
-                    </p>
+            <div class="col-lg-4 col-md-6 d-md-flex align-content-center" data-aos="fade-up">
+                <div class="count-box">
+                    <i class="bi bi-emoji-smile"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="180" data-purecounter-duration="1"
+                          class="purecounter"></span>
+                    <p><strong>Happy Clients</strong></p>
                 </div>
             </div>
-        </div>
-        <div class="col-md-4 mb-4">
-            <div class="card shadow-sm text-center h-100" style="background: white;border: none" data-aos="fade-up">
-                <i class="bi bi-bank2 icon-service"></i>
-                <div class="card-body">
-                    <p style="font-size: 25px">3D Interior Design</p>
-                    <p class="card-text">
-                        We give life to our design using the latest 2D & 3D imaging technology to showcase even
-                        the minutest details with complete consistency and quality.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 mb-4">
-            <div class="card shadow-sm text-center h-100" style="background: white;border: none" data-aos="fade-up">
-                <i class="bi bi-bank2 icon-service"></i>
-                <div class="card-body">
-                    <p style="font-size: 25px">Space Planning</p>
-                    <p class="card-text">
-                        Space planning is the core of our interior design that mainly helps you allocate and utilize
-                        all available space in an efficient and effective manner.
-                    </p>
+            <div class="col-lg-4 col-md-6 d-md-flex align-content-center " data-aos="fade-up" data-aos-delay="200">
+                <div class="count-box">
+                    <i class="bi bi-journal-richtext"></i>
+                    <span data-purecounter-start="0" data-purecounter-end="300" data-purecounter-duration="1"
+                          class="purecounter"></span>
+                    <p><strong>Projects in Progress</strong></p>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</section>
+<section id="contact"></section>
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
         class="bi bi-arrow-up-short"></i></a>
 <script src="assets/vendor/aos/aos.js"></script>
 <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-<!--<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>-->
-<!--<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>-->
-<!--<script src="assets/vendor/purecounter/purecounter.js"></script>-->
-<!--<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>-->
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/purecounter/purecounter.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 <!--<script src="assets/vendor/typed.js/typed.min.js"></script>-->
 <!--<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>-->
 <script src="assets/js/main.js"></script>
@@ -220,6 +402,7 @@
             $(".loader").fadeOut("slow");
         }, 3000);
     });
+
 </script>
 <script>
 </script>
